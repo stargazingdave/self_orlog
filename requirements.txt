@@ -1,0 +1,9 @@
+gymnasium==1.2.2
+matplotlib==3.10.8
+numpy==2.2.6
+optuna==4.7.0
+pandas==2.3.3
+stable_baselines3==2.7.1
+torch==2.9.1
+tqdm==4.67.1
+PyYAML==6.0.3
