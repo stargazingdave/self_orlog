@@ -1,0 +1,11 @@
+step=725000
+
+per_opponent:
+  aggressive               weight=0.2000 step=725000 mean_return=0.7020 return_variance=1.1418 winrate=0.7667 winrate_variance=0.1789
+  conservative             weight=0.2000 step=725000 mean_return=1.1147 return_variance=0.5648 winrate=0.9000 winrate_variance=0.0900
+  self_play                weight=0.2000 step=725000 mean_return=0.8373 return_variance=0.9662 winrate=0.8000 winrate_variance=0.1600
+  tempo_aggressive         weight=0.2000 step=725000 mean_return=1.1520 return_variance=0.2100 winrate=0.9667 winrate_variance=0.0322
+  token_hoarder_burst      weight=0.2000 step=725000 mean_return=0.8460 return_variance=0.8484 winrate=0.8333 winrate_variance=0.1389
+
+aggregate:
+  step=725000 mean_return=0.9304 return_variance=0.7764 winrate=0.8533 winrate_variance=0.1252

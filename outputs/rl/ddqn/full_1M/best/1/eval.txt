@@ -1,0 +1,20 @@
+step=200000
+
+per_opponent:
+  balanced_value_greedy    weight=0.0000 step=200000 mean_return=0.4020 return_variance=1.2673 winrate=0.6667 winrate_variance=0.2222
+  tempo_aggressive         weight=0.4000 step=200000 mean_return=0.5507 return_variance=1.2621 winrate=0.7000 winrate_variance=0.2100
+  thor_burst               weight=0.0000 step=200000 mean_return=0.0733 return_variance=1.2854 winrate=0.5333 winrate_variance=0.2489
+  token_hoarder_burst      weight=0.0000 step=200000 mean_return=0.4847 return_variance=1.3650 winrate=0.7000 winrate_variance=0.2100
+  heuristic_pressure       weight=0.0000 step=200000 mean_return=0.1513 return_variance=1.5848 winrate=0.5667 winrate_variance=0.2456
+  arrow_ullr               weight=0.0000 step=200000 mean_return=-0.4373 return_variance=1.3408 winrate=0.3333 winrate_variance=0.2222
+  ranged_aggressive        weight=0.0000 step=200000 mean_return=1.0153 return_variance=0.5563 winrate=0.9000 winrate_variance=0.0900
+  melee_aggressive         weight=0.0000 step=200000 mean_return=0.4373 return_variance=1.2954 winrate=0.6667 winrate_variance=0.2222
+  conservative             weight=0.5000 step=200000 mean_return=0.9007 return_variance=0.8528 winrate=0.8333 winrate_variance=0.1389
+  random                   weight=0.1000 step=200000 mean_return=0.9880 return_variance=0.9209 winrate=0.8333 winrate_variance=0.1389
+  gold_thor3               weight=0.0000 step=200000 mean_return=0.1520 return_variance=1.3714 winrate=0.5000 winrate_variance=0.2500
+  self_play                weight=0.0000 step=200000 mean_return=0.4587 return_variance=1.3043 winrate=0.6667 winrate_variance=0.2222
+  shield_counter_archer    weight=0.0000 step=200000 mean_return=-0.1067 return_variance=1.4069 winrate=0.4333 winrate_variance=0.2456
+  aggressive               weight=0.0000 step=200000 mean_return=0.7073 return_variance=1.1386 winrate=0.7667 winrate_variance=0.1789
+
+aggregate:
+  step=200000 mean_return=0.7694 return_variance=1.0559 winrate=0.7800 winrate_variance=0.1716

@@ -1,0 +1,20 @@
+step=375000
+
+per_opponent:
+  balanced_value_greedy    weight=0.0000 step=375000 mean_return=0.2007 return_variance=1.2858 winrate=0.5667 winrate_variance=0.2456
+  tempo_aggressive         weight=0.1667 step=375000 mean_return=0.6553 return_variance=1.2255 winrate=0.7667 winrate_variance=0.1789
+  thor_burst               weight=0.0000 step=375000 mean_return=-0.2587 return_variance=1.4631 winrate=0.4000 winrate_variance=0.2400
+  token_hoarder_burst      weight=0.0000 step=375000 mean_return=0.2413 return_variance=1.3146 winrate=0.5667 winrate_variance=0.2456
+  heuristic_pressure       weight=0.0000 step=375000 mean_return=-0.3640 return_variance=1.3968 winrate=0.3667 winrate_variance=0.2322
+  arrow_ullr               weight=0.0000 step=375000 mean_return=-0.3187 return_variance=1.2477 winrate=0.3667 winrate_variance=0.2322
+  ranged_aggressive        weight=0.1667 step=375000 mean_return=0.8513 return_variance=0.7461 winrate=0.8333 winrate_variance=0.1389
+  melee_aggressive         weight=0.1667 step=375000 mean_return=1.1033 return_variance=0.3858 winrate=0.9333 winrate_variance=0.0622
+  conservative             weight=0.2500 step=375000 mean_return=0.6807 return_variance=1.1347 winrate=0.7667 winrate_variance=0.1789
+  random                   weight=0.0417 step=375000 mean_return=0.8633 return_variance=0.8912 winrate=0.8000 winrate_variance=0.1600
+  gold_thor3               weight=0.0000 step=375000 mean_return=0.1807 return_variance=1.2940 winrate=0.5333 winrate_variance=0.2489
+  self_play                weight=0.0000 step=375000 mean_return=0.9580 return_variance=0.8320 winrate=0.8667 winrate_variance=0.1156
+  shield_counter_archer    weight=0.0000 step=375000 mean_return=0.4040 return_variance=1.3106 winrate=0.6667 winrate_variance=0.2222
+  aggressive               weight=0.2083 step=375000 mean_return=0.8487 return_variance=0.8907 winrate=0.8333 winrate_variance=0.1389
+
+aggregate:
+  step=375000 mean_return=0.8179 return_variance=0.9224 winrate=0.8208 winrate_variance=0.1471

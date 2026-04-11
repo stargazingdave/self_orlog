@@ -1,0 +1,12 @@
+benchmark=2
+step=1000000
+
+per_opponent:
+  random                   weight=0.0500 mean_return=0.7800 return_variance=0.3916 winrate=0.8900 winrate_variance=0.0979
+  conservative             weight=0.3500 mean_return=0.8267 return_variance=0.3166 winrate=0.9133 winrate_variance=0.0792
+  tempo_aggressive         weight=0.2000 mean_return=0.8400 return_variance=0.2944 winrate=0.9200 winrate_variance=0.0736
+  melee_aggressive         weight=0.2000 mean_return=0.9267 return_variance=0.1413 winrate=0.9633 winrate_variance=0.0353
+  ranged_aggressive        weight=0.2000 mean_return=0.8067 return_variance=0.3493 winrate=0.9033 winrate_variance=0.0873
+
+aggregate:
+  mean_return=0.8430 return_variance=0.2894 winrate=0.9215 winrate_variance=0.0723

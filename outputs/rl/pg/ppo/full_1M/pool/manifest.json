@@ -1,0 +1,20 @@
+{
+  "recent": [
+    "recent_step_000000000.zip",
+    "recent_step_000200000.zip",
+    "recent_step_000400000.zip",
+    "recent_step_000600000.zip",
+    "recent_step_000800000.zip",
+    "recent_step_001000000.zip"
+  ],
+  "historical": [],
+  "best": [],
+  "bucket_weights": {
+    "recent": 0.32,
+    "historical": 0.33,
+    "best": 0.35
+  },
+  "max_recent": 6,
+  "max_historical": 10,
+  "max_best": 4
+}

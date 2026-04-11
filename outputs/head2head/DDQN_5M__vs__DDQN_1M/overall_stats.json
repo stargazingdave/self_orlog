@@ -1,0 +1,38 @@
+{
+  "pair": "DDQN_5M__vs__DDQN_1M",
+  "created_at_utc": "2026-04-10T10:42:29.499657+00:00",
+  "model1": {
+    "name": "DDQN_5M",
+    "architecture": "ddqn",
+    "source_path": "outputs\\rl\\ddqn\\full_5M\\best\\8\\model.zip"
+  },
+  "model2": {
+    "name": "DDQN_1M",
+    "architecture": "ddqn",
+    "source_path": "outputs\\rl\\ddqn\\full_1M\\best\\8\\model.zip"
+  },
+  "deterministic": true,
+  "max_steps_per_episode": 200,
+  "games_per_seat": 1000,
+  "seat_a": {
+    "left": "DDQN_5M",
+    "right": "DDQN_1M"
+  },
+  "seat_b": {
+    "left": "DDQN_1M",
+    "right": "DDQN_5M"
+  },
+  "model1_name": "DDQN_5M",
+  "model2_name": "DDQN_1M",
+  "total_games": 2000,
+  "model1_wins": 1207,
+  "model2_wins": 793,
+  "truncations": 0,
+  "steps_total": 72699,
+  "avg_steps": 36.3495,
+  "model1_winrate_all": 0.6035,
+  "model2_winrate_all": 0.3965,
+  "truncation_rate": 0.0,
+  "model1_winrate_decided": 0.6035,
+  "model2_winrate_decided": 0.3965
+}

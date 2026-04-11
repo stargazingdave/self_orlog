@@ -1,0 +1,8 @@
+benchmark=0
+step=1000
+
+per_opponent:
+  random                   weight=1.0000 mean_return=-0.0800 return_variance=0.9936 winrate=0.4600 winrate_variance=0.2484
+
+aggregate:
+  mean_return=-0.0800 return_variance=0.9936 winrate=0.4600 winrate_variance=0.2484

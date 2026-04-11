@@ -1,0 +1,31 @@
+{
+  "recent": [
+    "recent_step_004000000.zip",
+    "recent_step_004200000.zip",
+    "recent_step_004400000.zip",
+    "recent_step_004600000.zip",
+    "recent_step_004800000.zip",
+    "recent_step_005000000.zip"
+  ],
+  "historical": [
+    "recent_step_002000000.zip",
+    "recent_step_002200000.zip",
+    "recent_step_002400000.zip",
+    "recent_step_002600000.zip",
+    "recent_step_002800000.zip",
+    "recent_step_003000000.zip",
+    "recent_step_003200000.zip",
+    "recent_step_003400000.zip",
+    "recent_step_003600000.zip",
+    "recent_step_003800000.zip"
+  ],
+  "best": [],
+  "bucket_weights": {
+    "recent": 0.32,
+    "historical": 0.33,
+    "best": 0.35
+  },
+  "max_recent": 6,
+  "max_historical": 10,
+  "max_best": 4
+}

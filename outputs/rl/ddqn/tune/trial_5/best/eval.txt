@@ -1,0 +1,12 @@
+step=25000
+
+per_opponent:
+  random                   weight=0.1000 step=25000 mean_return=0.0207 return_variance=1.4580 winrate=0.5333 winrate_variance=0.2489
+  conservative             weight=0.2000 step=25000 mean_return=0.3347 return_variance=1.4119 winrate=0.6667 winrate_variance=0.2222
+  melee_aggressive         weight=0.2000 step=25000 mean_return=-0.3700 return_variance=1.3729 winrate=0.4000 winrate_variance=0.2400
+  ranged_aggressive        weight=0.2000 step=25000 mean_return=0.0840 return_variance=1.5542 winrate=0.5333 winrate_variance=0.2489
+  aggressive               weight=0.2000 step=25000 mean_return=-0.5720 return_variance=1.0739 winrate=0.2667 winrate_variance=0.1956
+  heuristic_pressure       weight=0.1000 step=25000 mean_return=-0.7880 return_variance=1.2090 winrate=0.2667 winrate_variance=0.1956
+
+aggregate:
+  step=25000 mean_return=-0.1814 return_variance=1.4951 winrate=0.4533 winrate_variance=0.2478

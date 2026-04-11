@@ -1,0 +1,1 @@
+STARTING_HEALTH: int = 15

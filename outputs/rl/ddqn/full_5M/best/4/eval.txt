@@ -1,0 +1,20 @@
+step=2250000
+
+per_opponent:
+  thor_burst               weight=0.0000 step=2250000 mean_return=0.1980 return_variance=1.3915 winrate=0.5667 winrate_variance=0.2456
+  conservative             weight=0.2500 step=2250000 mean_return=1.3607 return_variance=0.0427 winrate=1.0000 winrate_variance=0.0000
+  balanced_value_greedy    weight=0.0625 step=2250000 mean_return=1.0640 return_variance=0.5600 winrate=0.9000 winrate_variance=0.0900
+  random                   weight=0.0625 step=2250000 mean_return=1.3347 return_variance=0.2095 winrate=0.9667 winrate_variance=0.0322
+  arrow_ullr               weight=0.0000 step=2250000 mean_return=0.2873 return_variance=1.4067 winrate=0.6000 winrate_variance=0.2400
+  melee_aggressive         weight=0.0625 step=2250000 mean_return=1.1453 return_variance=0.4821 winrate=0.9333 winrate_variance=0.0622
+  self_play                weight=0.0000 step=2250000 mean_return=1.1267 return_variance=0.5309 winrate=0.9000 winrate_variance=0.0900
+  ranged_aggressive        weight=0.0625 step=2250000 mean_return=1.2300 return_variance=0.3452 winrate=0.9333 winrate_variance=0.0622
+  aggressive               weight=0.2500 step=2250000 mean_return=1.1140 return_variance=0.5554 winrate=0.9000 winrate_variance=0.0900
+  token_hoarder_burst      weight=0.0625 step=2250000 mean_return=1.1933 return_variance=0.3449 winrate=0.9333 winrate_variance=0.0622
+  heuristic_pressure       weight=0.1250 step=2250000 mean_return=0.8227 return_variance=0.9449 winrate=0.8000 winrate_variance=0.1600
+  gold_thor3               weight=0.0000 step=2250000 mean_return=0.3453 return_variance=1.1938 winrate=0.5667 winrate_variance=0.2456
+  tempo_aggressive         weight=0.0625 step=2250000 mean_return=1.2700 return_variance=0.4404 winrate=0.9333 winrate_variance=0.0622
+  shield_counter_archer    weight=0.0000 step=2250000 mean_return=0.8320 return_variance=0.8500 winrate=0.8333 winrate_variance=0.1389
+
+aggregate:
+  step=2250000 mean_return=1.1738 return_variance=0.4448 winrate=0.9250 winrate_variance=0.0694

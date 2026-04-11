@@ -1,0 +1,16 @@
+benchmark=4
+step=4675000
+
+per_opponent:
+  random                   weight=0.0625 mean_return=0.9067 return_variance=0.1780 winrate=0.9533 winrate_variance=0.0445
+  conservative             weight=0.2500 mean_return=0.9733 return_variance=0.0526 winrate=0.9867 winrate_variance=0.0132
+  tempo_aggressive         weight=0.0625 mean_return=0.8800 return_variance=0.2256 winrate=0.9400 winrate_variance=0.0564
+  melee_aggressive         weight=0.0625 mean_return=0.9600 return_variance=0.0784 winrate=0.9800 winrate_variance=0.0196
+  ranged_aggressive        weight=0.0625 mean_return=0.8667 return_variance=0.2489 winrate=0.9333 winrate_variance=0.0622
+  aggressive               weight=0.2500 mean_return=0.9600 return_variance=0.0784 winrate=0.9800 winrate_variance=0.0196
+  heuristic_pressure       weight=0.1250 mean_return=0.6800 return_variance=0.5376 winrate=0.8400 winrate_variance=0.1344
+  balanced_value_greedy    weight=0.0625 mean_return=0.6800 return_variance=0.5376 winrate=0.8400 winrate_variance=0.1344
+  token_hoarder_burst      weight=0.0625 mean_return=0.6933 return_variance=0.5193 winrate=0.8467 winrate_variance=0.1298
+
+aggregate:
+  mean_return=0.8800 return_variance=0.2256 winrate=0.9400 winrate_variance=0.0564

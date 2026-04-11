@@ -1,0 +1,38 @@
+{
+  "pair": "PPO_5M__vs__DDQN_1M",
+  "created_at_utc": "2026-04-10T10:54:09.775688+00:00",
+  "model1": {
+    "name": "PPO_5M",
+    "architecture": "ppo",
+    "source_path": "outputs\\rl\\pg\\ppo\\full_5M\\8\\best\\model.zip"
+  },
+  "model2": {
+    "name": "DDQN_1M",
+    "architecture": "ddqn",
+    "source_path": "outputs\\rl\\ddqn\\full_1M\\best\\8\\model.zip"
+  },
+  "deterministic": true,
+  "max_steps_per_episode": 200,
+  "games_per_seat": 1000,
+  "seat_a": {
+    "left": "PPO_5M",
+    "right": "DDQN_1M"
+  },
+  "seat_b": {
+    "left": "DDQN_1M",
+    "right": "PPO_5M"
+  },
+  "model1_name": "PPO_5M",
+  "model2_name": "DDQN_1M",
+  "total_games": 2000,
+  "model1_wins": 1362,
+  "model2_wins": 638,
+  "truncations": 0,
+  "steps_total": 66880,
+  "avg_steps": 33.44,
+  "model1_winrate_all": 0.681,
+  "model2_winrate_all": 0.319,
+  "truncation_rate": 0.0,
+  "model1_winrate_decided": 0.681,
+  "model2_winrate_decided": 0.319
+}

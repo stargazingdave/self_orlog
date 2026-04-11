@@ -1,0 +1,20 @@
+step=700000
+
+per_opponent:
+  balanced_value_greedy    weight=0.1000 step=700000 mean_return=0.4467 return_variance=1.2670 winrate=0.6667 winrate_variance=0.2222
+  tempo_aggressive         weight=0.0500 step=700000 mean_return=0.7393 return_variance=1.0155 winrate=0.7667 winrate_variance=0.1789
+  thor_burst               weight=0.0500 step=700000 mean_return=0.4940 return_variance=1.1310 winrate=0.7333 winrate_variance=0.1956
+  token_hoarder_burst      weight=0.1000 step=700000 mean_return=0.8060 return_variance=0.9489 winrate=0.8333 winrate_variance=0.1389
+  heuristic_pressure       weight=0.1000 step=700000 mean_return=0.4133 return_variance=1.4032 winrate=0.6667 winrate_variance=0.2222
+  arrow_ullr               weight=0.0500 step=700000 mean_return=0.0693 return_variance=1.5165 winrate=0.5000 winrate_variance=0.2500
+  ranged_aggressive        weight=0.0500 step=700000 mean_return=1.0353 return_variance=0.7536 winrate=0.8667 winrate_variance=0.1156
+  melee_aggressive         weight=0.0500 step=700000 mean_return=1.0420 return_variance=0.6233 winrate=0.9000 winrate_variance=0.0900
+  conservative             weight=0.1500 step=700000 mean_return=1.1980 return_variance=0.4630 winrate=0.9333 winrate_variance=0.0622
+  random                   weight=0.0500 step=700000 mean_return=1.1573 return_variance=0.5295 winrate=0.9000 winrate_variance=0.0900
+  gold_thor3               weight=0.0500 step=700000 mean_return=0.4573 return_variance=1.3546 winrate=0.6333 winrate_variance=0.2322
+  self_play                weight=0.0000 step=700000 mean_return=0.8353 return_variance=0.9619 winrate=0.8000 winrate_variance=0.1600
+  shield_counter_archer    weight=0.0500 step=700000 mean_return=0.6807 return_variance=1.0508 winrate=0.7667 winrate_variance=0.1789
+  aggressive               weight=0.1500 step=700000 mean_return=0.8553 return_variance=0.9052 winrate=0.8333 winrate_variance=0.1389
+
+aggregate:
+  step=700000 mean_return=0.7584 return_variance=1.0660 winrate=0.7850 winrate_variance=0.1688

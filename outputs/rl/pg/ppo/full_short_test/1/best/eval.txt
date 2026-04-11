@@ -1,0 +1,10 @@
+benchmark=1
+step=1000
+
+per_opponent:
+  random                   weight=0.1000 mean_return=-0.0800 return_variance=0.9936 winrate=0.4600 winrate_variance=0.2484
+  conservative             weight=0.5000 mean_return=0.0133 return_variance=0.9998 winrate=0.5067 winrate_variance=0.2500
+  tempo_aggressive         weight=0.4000 mean_return=-0.1733 return_variance=0.9700 winrate=0.4133 winrate_variance=0.2425
+
+aggregate:
+  mean_return=-0.0707 return_variance=0.9950 winrate=0.4647 winrate_variance=0.2488
