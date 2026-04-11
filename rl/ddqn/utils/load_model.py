@@ -26,6 +26,23 @@ def get_best_hyperparams() -> dict[str, float | int]:
         / "tune"
         / "best_hyperparameters_20260331_075257.json"
     )
+
+    if not path.exists():
+        return {
+            "hidden_dim": 512,
+            "n_layers": 3,
+            "lr": 2.9380279387035334e-05,
+            "gamma": 0.965459808211767,
+            "batch_size": 256,
+            "buffer_size": 500000,
+            "eps_start": 0.9832442640800422,
+            "eps_end": 0.03698712885426209,
+            "eps_decay_steps": 50000,
+            "target_update_freq": 10000,
+            "learning_starts": 6000,
+            "train_freq": 2,
+        }
+
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
