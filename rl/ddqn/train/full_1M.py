@@ -14,7 +14,6 @@ from rl.utils.curriculum import MixPoint, normalize_mix, to_opponent_dict
 MAX_STEPS = 300
 TOTAL_ENV_STEPS = 1_000_000
 EVAL_FREQ = 25_000
-N_EVAL_EPISODES = 300
 
 
 def main():
