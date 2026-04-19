@@ -10,7 +10,7 @@ import torch
 from pathlib import Path
 
 from rl.ddqn.config import DDQNConfig
-from rl.ddqn.model import DDQN, QNetConfigurable
+from rl.ddqn.model import DDQN, QNet
 from rl.ddqn.utils.dirs import build_checkpoint_dir
 from rl.env.env import OrlogEnv
 
@@ -70,10 +70,10 @@ def load_model(
 
     out = DDQN(env, config=DDQNConfig(**params))
 
-    q = QNetConfigurable(
-        out.obs_dim, out.n_actions, params["hidden_dim"], params["n_layers"]
-    ).to(device)
-    q_targ = QNetConfigurable(
+    q = QNet(out.obs_dim, out.n_actions, params["hidden_dim"], params["n_layers"]).to(
+        device
+    )
+    q_targ = QNet(
         out.obs_dim, out.n_actions, params["hidden_dim"], params["n_layers"]
     ).to(device)
 

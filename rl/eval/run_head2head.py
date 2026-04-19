@@ -29,6 +29,7 @@ from game.types.game import GamePhase, GameState
 from game.types.players import PlayerId, PlayerState
 from game.types.randomizer import Randomizer
 from rl.ddqn.config import DDQNConfig
+from rl.ddqn.model import QNet
 from rl.env.actions import (
     FAVOR_END,
     FAVOR_SKIP,
@@ -164,21 +165,6 @@ def build_overall_stats(
 # =========================
 
 
-class QNetConfigurable(nn.Module):
-    def __init__(self, obs_dim: int, n_actions: int, hidden_dim: int, n_layers: int):
-        super().__init__()
-        layers = []
-        in_dim = obs_dim
-        for _ in range(n_layers):
-            layers.extend([nn.Linear(in_dim, hidden_dim), nn.ReLU()])
-            in_dim = hidden_dim
-        layers.append(nn.Linear(in_dim, n_actions))
-        self.net = nn.Sequential(*layers)
-
-    def forward(self, x):
-        return self.net(x)
-
-
 class PolicyAdapter:
     architecture: str
     source_path: str
@@ -242,7 +228,7 @@ class DDQNPolicy(PolicyAdapter):
                 )
             return
 
-        q_net = QNetConfigurable(
+        q_net = QNet(
             obs_dim=obs_dim,
             n_actions=n_actions,
             hidden_dim=self.hidden_dim,
