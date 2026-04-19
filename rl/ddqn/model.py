@@ -40,7 +40,7 @@ from rl.ddqn.replay_buffer import ReplayBuffer
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
-class QNetConfigurable(nn.Module):
+class QNet(nn.Module):
     def __init__(self, obs_dim: int, n_actions: int, hidden_dim: int, n_layers: int):
         super().__init__()
         layers = []
@@ -110,12 +110,10 @@ class DDQN:
             raise ValueError("Could not infer n_actions from env.action_space.n")
         n_actions = int(n_actions_attr)
 
-        q = QNetConfigurable(obs_dim, n_actions, config.hidden_dim, config.n_layers).to(
+        q = QNet(obs_dim, n_actions, config.hidden_dim, config.n_layers).to(device)
+        q_target = QNet(obs_dim, n_actions, config.hidden_dim, config.n_layers).to(
             device
         )
-        q_target = QNetConfigurable(
-            obs_dim, n_actions, config.hidden_dim, config.n_layers
-        ).to(device)
 
         self.env = env
 

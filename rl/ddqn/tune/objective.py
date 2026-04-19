@@ -1,19 +1,14 @@
-from dataclasses import dataclass
 import random
-
 import numpy as np
 import optuna
 import torch
-import torch.optim as optim
 
 from game.types.players import PlayerId
 from rl.utils.curriculum import MixPoint
 from rl.ddqn.config import DDQNConfig
-from rl.ddqn.model import DDQN, QNetConfigurable
 from rl.ddqn.utils.init_model import init_model
 from rl.env.config import OpponentName
 from rl.env.env import Opponent, OrlogEnv
-from rl.ddqn.replay_buffer import ReplayBuffer
 
 
 def seed_everything(seed: int):

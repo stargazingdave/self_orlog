@@ -10,7 +10,7 @@ import torch
 from pathlib import Path
 
 from rl.ddqn.config import DDQNConfig
-from rl.ddqn.model import DDQN, QNetConfigurable
+from rl.ddqn.model import DDQN, QNet
 from rl.ddqn.utils.dirs import build_checkpoint_dir
 from rl.env.env import OrlogEnv
 
@@ -26,23 +26,6 @@ def get_best_hyperparams() -> dict[str, float | int]:
         / "tune"
         / "best_hyperparameters_20260331_075257.json"
     )
-
-    if not path.exists():
-        return {
-            "hidden_dim": 512,
-            "n_layers": 3,
-            "lr": 2.9380279387035334e-05,
-            "gamma": 0.965459808211767,
-            "batch_size": 256,
-            "buffer_size": 500000,
-            "eps_start": 0.9832442640800422,
-            "eps_end": 0.03698712885426209,
-            "eps_decay_steps": 50000,
-            "target_update_freq": 10000,
-            "learning_starts": 6000,
-            "train_freq": 2,
-        }
-
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -87,10 +70,10 @@ def load_model(
 
     out = DDQN(env, config=DDQNConfig(**params))
 
-    q = QNetConfigurable(
-        out.obs_dim, out.n_actions, params["hidden_dim"], params["n_layers"]
-    ).to(device)
-    q_targ = QNetConfigurable(
+    q = QNet(out.obs_dim, out.n_actions, params["hidden_dim"], params["n_layers"]).to(
+        device
+    )
+    q_targ = QNet(
         out.obs_dim, out.n_actions, params["hidden_dim"], params["n_layers"]
     ).to(device)
 

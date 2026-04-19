@@ -17,6 +17,7 @@ from game.functions.utils import (
     get_god_favor_def,
     get_player,
     other_player_id,
+    player_index_from_id,
 )
 from game.state_transitions.advance_resolution import advance_resolution
 from game.state_transitions.choose_god_favor import choose_god_favor
