@@ -78,12 +78,12 @@ def _encode_player_favors(p: PlayerState) -> list[int]:
     """
     out = [0, 0, 0]
 
-    chosen = getattr(getattr(p, "favor", None), "chosen", None)
+    chosen = p.chosen_god_favor_this_round
     if not chosen:
         return out
 
-    favor_id = getattr(chosen, "favor_id", None)
-    level_index = getattr(chosen, "level_index", None)  # expected 0..2
+    favor_id = chosen.favor_id
+    level_index = chosen.level_index  # expected 0..2
 
     if level_index is None or not (0 <= int(level_index) <= 2):
         return out
